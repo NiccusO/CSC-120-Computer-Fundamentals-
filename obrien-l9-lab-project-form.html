@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Nicole O'Brien
+    obrien-l9-lab-project-form.html
+	Nicole O'Brien/nlobrien
+	CTI.110.0074
+	Purpose: add external css to concert event form
+-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L9 Concert Event Form</title>
+  <link rel="stylesheet" type="text/css" href="./obrien-l9-lab-project-style.css">
+</head>
+<body>
+<div class="container" id="container">
+  <h1>Calculate The B-52s Event Cost</h1>
+  <p id="ticketfee">There is a ticket fee of $0.50/ticket for orders with over 5 tickets. Otherwise the fee is $1.00/ticket</p>
+  <form id="form" action="obrien-group-l13-lab-project-code.php" method="post">
+    <section class="userinfo">
+      <h2>User Information</h2>
+	  <fieldset>
+	  <legend>Name and Phone Number</legend>
+        <ul>
+	      <li>
+	        <label for="name">Name:</label>
+		    <input type="text" id="name" name="name" required>
+	      </li>
+	      <li>
+	        <label for="phone">Phone Number:</label>
+		    <input type="tel" id="phone" name="phone" minlength=10 required>
+	      </li>
+	    </ul>
+		</fieldset>
+    </section>
+    <section class="tickets">
+      <h2>Tickets</h2>
+	  <fieldset>
+	  <legend>Adult and Child Tickets</legend>
+        <ul>
+	      <li>
+	        <label for="adults">How many adult tickets?</label>
+		    <input type="number" id="adults" name="adults" min="1" required>
+	      </li>
+	      <li>
+	        <label for="child">How many child tickets?</label>
+		    <input type="number" id="child" name="child" min="0" required>
+	      </li>
+	    </ul>
+	  </fieldset>
+    </section>
+    <section class="dates">
+      <h2>Dates</h2>
+	  <fieldset>
+	  <legend>Concert Date Desired</legend>
+        <ul>
+	      <li>
+	        <label for="date">Choose a date:</label>
+		    <select name="date" id="date" required>
+		      <option value="Mar 2021">March 2021</option>
+		      <option value="Apr 2021">April 2021</option>
+		      <option value="May 2021">May 2021</option>
+		     </select>
+	      </li>
+	    </ul>
+	  </fieldset>
+    </section>
+  </form>
+<footer>
+  <button class="submit" type="submit" form="form">Submit Ticket Info</button>  
+</footer>
+<a class="returnlink" href="./obrien-l9-lab-project.html">Return to Main Page</a>
+</div>
+</body>
+</html>
+
